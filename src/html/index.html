@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flying Duckmen</title>
+    <!-- <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/logos/favicon.svg"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header position-fixed start-0 top-0 w-100">
+      <div class="container">
+        <div
+          class="header-wrapper d-flex align-items-center justify-content-between"
+        >
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="../assets/images/logos/logo-white.svg"
+                alt="logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-4">
+            <div class="btn-group">
+              <button
+                class="toggle-menu bg-transparent border-0 round-45 p-2 d-flex align-items-center justify-content-center rounded-circle"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                <iconify-icon
+                  icon="solar:hamburger-menu-line-duotone"
+                  class="menu-icon fs-8 text-white"
+                ></iconify-icon>
+              </button>
+              <ul class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4" style="min-width: 270px;">
+                <div class="d-flex flex-column justify-content-between" style="height: 350px;">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                    <li>
+                      <a href="index.html" class="fs-4 fw-normal text-white menu-active" style="border-left: 4px solid #E53935; padding-left: 12px;">Home</a>
+                    </li>
+                    <li>
+                      <a href="#" class="fs-4 fw-normal text-white" style="padding-left: 16px;">Shop</a>
+                    </li>
+                    <li>
+                      <a href="about-us.html" class="fs-4 fw-normal text-white" style="padding-left: 16px;">About</a>
+                    </li>
+                    <li>
+                      <a href="blog.html" class="fs-4 fw-normal text-white" style="padding-left: 16px;">Blog</a>
+                    </li>
+                    <li>
+                      <a href="contact.html" class="fs-4 fw-normal text-white" style="padding-left: 16px;">Contact</a>
+                    </li>
+                  </ul>
+                  <div class="mt-4">
+                    <div class="fs-6 text-white-50 mb-1">+1 417 369 4255</div>
+                    <div class="fs-5 text-white">hi@flyingduckmen.com</div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  Page Wrapper -->
+    <div class="page-wrapper overflow-hidden">
+      <!--  Banner Section -->
+      <section
+        class="banner-section position-relative d-flex align-items-center min-vh-100 overflow-hidden"
+      >
+        <img
+          src="../assets/images/backgrounds/homepage-banner-image.webp"
+          alt="banner image"
+          class="position-absolute top-0"
+        />
+        <div class="container">
+          <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-xl-4">
+                <div
+                  class="d-flex align-items-center justify-content-center gap-2"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
+                >
+                  <div class="h-16 border border-primary"></div>
+                  <p class="mb-0 text-white fs-5">
+                    Fan favourites that never miss
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center gap-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <h1 class="mb-0 fs-15 text-white text-center">
+                Join the Movement.
+                <br />Wear the Mascots.
+              </h1>
+              <button class="btn text-white">
+                <span class="p-1 rounded-circle bg-white"></span>
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- features Section -->
+      <section>
+        <div class="container">
+          <div
+            class="border border-border d-flex align-items-center flex-lg-nowrap flex-wrap"
+          >
+            <div
+              class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border"
+            >
+              <iconify-icon
+                icon="ph:headset"
+                class="menu-icon fs-8 text-white"
+              ></iconify-icon>
+              <p class="text-white mb-0">Customer Support</p>
+            </div>
+            <div
+              class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border"
+            >
+              <iconify-icon
+                icon="ph:credit-card"
+                class="menu-icon fs-8 text-white"
+              ></iconify-icon>
+              <p class="text-white mb-0">Secure Payment</p>
+            </div>
+            <div
+              class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border"
+            >
+              <iconify-icon
+                icon="ph:globe"
+                class="menu-icon fs-8 text-white"
+              ></iconify-icon>
+              <p class="text-white mb-0">Free Shipping</p>
+            </div>
+            <div
+              class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border"
+            >
+              <iconify-icon
+                icon="ph:arrow-counter-clockwise"
+                class="menu-icon fs-8 text-white"
+              ></iconify-icon>
+              <p class="text-white mb-0">30-Days Free Returns</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Most wanted gear Section -->
+      <section>
+        <div class="container border-top border-border py-5 py-lg-11">
+          <div
+            class="d-flex align-items-center justify-content-start gap-2 mb-6"
+          >
+            <div class="h-16 border border-primary"></div>
+            <p class="mb-0 text-white fs-3 fw-semibold text-uppercase">Most wanted gear</p>
+          </div>
+          <h2 class="mb-9 fs-11 fw-medium text-white">Best Merc Products</h2>
+          <div class="product-slider owl-carousel owl-theme">
+            <div class="item product-card">
+              <a href="#" class="product-image position-relative">
+                <img
+                  src="../assets/images/products/product-1.webp"
+                  alt="product"
+                />
+                <div class="position-absolute z-1 end-16 view">
+                  <iconify-icon
+                    icon="ph:eye-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+                <div class="position-absolute z-1 end-16 add-cart">
+                  <iconify-icon
+                    icon="ph:plus-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+              </a>
+              <div class="mt-4 px-6">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2"
+                >
+                  <h3 class="fs-5 fw-medium text-white">Blackout Hoodie</h3>
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="text-white text-opacity-70">$79.99</p>
+              </div>
+            </div>
+            <div class="item product-card">
+              <a href="#" class="product-image position-relative">
+                <img
+                  src="../assets/images/products/product-2.webp"
+                  alt="product"
+                />
+                <div class="position-absolute z-1 end-16 view">
+                  <iconify-icon
+                    icon="ph:eye-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+                <div class="position-absolute z-1 end-16 add-cart">
+                  <iconify-icon
+                    icon="ph:plus-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+              </a>
+              <div class="mt-4 px-6">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2"
+                >
+                  <h3 class="fs-5 fw-medium text-white">Rough & Ready Cap</h3>
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="text-white text-opacity-70">$79.99</p>
+              </div>
+            </div>
+            <div class="item product-card">
+              <a href="#" class="product-image position-relative">
+                <img
+                  src="../assets/images/products/product-3.webp"
+                  alt="product"
+                />
+                <div class="position-absolute z-1 end-16 view">
+                  <iconify-icon
+                    icon="ph:eye-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+                <div class="position-absolute z-1 end-16 add-cart">
+                  <iconify-icon
+                    icon="ph:plus-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+              </a>
+              <div class="mt-4 px-6">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2"
+                >
+                  <h3 class="fs-5 fw-medium text-white">Quack Attack Tee</h3>
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="text-white text-opacity-70">$79.99</p>
+              </div>
+            </div>
+            <div class="item product-card">
+              <a href="#" class="product-image position-relative">
+                <img
+                  src="../assets/images/products/product-4.webp"
+                  alt="product"
+                />
+                <div class="position-absolute z-1 end-16 view">
+                  <iconify-icon
+                    icon="ph:eye-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+                <div class="position-absolute z-1 end-16 add-cart">
+                  <iconify-icon
+                    icon="ph:plus-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+              </a>
+              <div class="mt-4 px-6">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2"
+                >
+                  <h3 class="fs-5 fw-medium text-white">Elite Logo Tee</h3>
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="text-white text-opacity-70">$79.99</p>
+              </div>
+            </div>
+            <div class="item product-card">
+              <a href="#" class="product-image position-relative">
+                <img
+                  src="../assets/images/products/product-1.webp"
+                  alt="product"
+                />
+                <div class="position-absolute z-1 end-16 view">
+                  <iconify-icon
+                    icon="ph:eye-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+                <div class="position-absolute z-1 end-16 add-cart">
+                  <iconify-icon
+                    icon="ph:plus-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+              </a>
+              <div class="mt-4 px-6">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2"
+                >
+                  <h3 class="fs-5 fw-medium text-white">Blackout Hoodie</h3>
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="text-white text-opacity-70">$79.99</p>
+              </div>
+            </div>
+            <div class="item product-card">
+              <a href="#" class="product-image position-relative">
+                <img
+                  src="../assets/images/products/product-2.webp"
+                  alt="product"
+                />
+                <div class="position-absolute z-1 end-16 view">
+                  <iconify-icon
+                    icon="ph:eye-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+                <div class="position-absolute z-1 end-16 add-cart">
+                  <iconify-icon
+                    icon="ph:plus-bold"
+                    class="text-white p-3 bg-white rounded-circle"
+                    style="--bs-bg-opacity: 0.2"
+                  ></iconify-icon>
+                </div>
+              </a>
+              <div class="mt-4 px-6">
+                <div
+                  class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2"
+                >
+                  <h3 class="fs-5 fw-medium text-white">Rough & Ready Cap</h3>
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <p class="text-white text-opacity-70">$79.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonal Section -->
+      <section>
+        <div class="container border-top border-border py-5 py-lg-11">
+          <div class="position-relative">
+            <div
+              class="d-flex align-items-center justify-content-start gap-2 mb-6"
+            >
+              <div class="h-16 border border-primary"></div>
+              <p class="mb-0 text-white fs-3 text-uppercase">Testimonials</p>
+            </div>
+            <div class="testimonial-slider owl-carousel owl-theme mt-9">
+              <div class="item">
+                <div class="d-flex gap-3 mb-7">
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                  <p class="mb-0 text-white text-opacity-70">5/5</p>
+                </div>
+                <h3 class="text-white fs-9 fw-medium">
+                  "The hoodie quality blew me away. Heavy, clean, and gets
+                  compliments every time I wear it."
+                </h3>
+                <div class="d-flex align-items-center gap-3 mt-11">
+                  <div class="rounded-circle overflow-hidden w-64 h-64">
+                    <img src="../assets/images/users/user-1.jpg" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="text-white fs-5 fw-medium mb-0">Jordan Reyes</h4>
+                    <p class="text-muted fs-4 mb-0">Streetwear Enthusiast</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-3 mb-7">
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                  <p class="mb-0 text-white text-opacity-70">5/5</p>
+                </div>
+                <h3 class="text-white fs-9 fw-medium">
+                  "Flying Duckmen feels like a movement, not just merch. Love
+                  the energy behind everything th."
+                </h3>
+                <div class="d-flex align-items-center gap-3 mt-11">
+                  <div class="rounded-circle overflow-hidden w-64 h-64">
+                    <img src="../assets/images/users/user-2.jpg" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="text-white fs-5 fw-medium mb-0">Sam Thompson</h4>
+                    <p class="text-muted fs-4 mb-0">Collector & Designer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-3 mb-7">
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                  <p class="mb-0 text-white text-opacity-70">5/5</p>
+                </div>
+                <h3 class="text-white fs-9 fw-medium">
+                  "The hoodie quality blew me away. Heavy, clean, and gets
+                  compliments every time I wear it."
+                </h3>
+                <div class="d-flex align-items-center gap-3 mt-11">
+                  <div class="rounded-circle overflow-hidden w-64 h-64">
+                    <img src="../assets/images/users/user-1.jpg" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="text-white fs-5 fw-medium mb-0">Jordan Reyes</h4>
+                    <p class="text-muted fs-4 mb-0">Streetwear Enthusiast</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-3 mb-7">
+                  <div class="d-flex">
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                    <div>
+                      <iconify-icon
+                        icon="tabler:star-filled"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                  <p class="mb-0 text-white text-opacity-70">5/5</p>
+                </div>
+                <h3 class="text-white fs-9 fw-medium">
+                  "Flying Duckmen feels like a movement, not just merch. Love
+                  the energy behind everything th."
+                </h3>
+                <div class="d-flex align-items-center gap-3 mt-11">
+                  <div class="rounded-circle overflow-hidden w-64 h-64">
+                    <img src="../assets/images/users/user-2.jpg" alt="user" />
+                  </div>
+                  <div>
+                    <h4 class="text-white fs-5 fw-medium mb-0">Sam Thompson</h4>
+                    <p class="text-muted fs-4 mb-0">Collector & Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section>
+        <div class="container border-top border-border py-5 py-lg-11">
+          <div class="mb-9">
+            <div
+              class="d-flex align-items-center justify-content-start gap-2 mb-6"
+            >
+              <div class="h-16 border border-primary"></div>
+              <p class="mb-0 text-white fs-3 fw-semibold text-uppercase">From the blog</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 class="mb-0 fs-11 fw-medium text-white">Our Latest News</h2>
+              <button class="btn fs-3 fw-semibold text-white">
+                <span class="p-1 rounded-circle bg-white text-uppercase"></span>
+                Read all News
+              </button>
+            </div>
+          </div>
+          <div class="row row-gap-4">
+            <div class="col-lg-4 col-sm-6 col-12">
+              <div>
+                <div>
+                  <a href="#">
+                    <img
+                      src="../assets/images/blogs/blog-1.webp"
+                      alt="Blog Image"
+                      class="w-100"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="link-hover fw-medium fs-6 text-white my-4 d-inline-block"
+                  >
+                    Styling Duckmen Streetwear
+                  </a>
+                  <p class="text-white text-opacity-70 fs-4">
+                    See how fans and creators are pairing Duckmen gear with
+                    everyday fits. From bold tees to clean hoodies, we break
+                    down how to rep the brand your way.
+                  </p>
+                  <a
+                    href="#"
+                    class="link-hover text-white d-flex w-fit fs-3 fw-semibold gap-2 align-items-center"
+                  >
+                    Read More
+                    <iconify-icon
+                      icon="ph:caret-right"
+                      class="fs-3 text-white bg-primary"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+              <div>
+                <div>
+                  <a href="#">
+                    <img
+                      src="../assets/images/blogs/blog-2.webp"
+                      alt="Blog Image"
+                      class="w-100"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="link-hover fw-medium fs-6 text-white my-4 d-inline-block"
+                  >
+                    Behind the Scenes: Drop Day
+                  </a>
+                  <p class="text-white text-opacity-70 fs-4">
+                    Ever wonder what happens before launch? Go behind the
+                    curtain to see how our team preps, shoots, and ships every
+                    drop with speed and style.
+                  </p>
+                  <a
+                    href="#"
+                    class="link-hover text-white d-flex w-fit fs-3 fw-semibold gap-2 align-items-center"
+                  >
+                    Read More
+                    <iconify-icon
+                      icon="ph:caret-right"
+                      class="fs-3 text-white bg-primary"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-12">
+              <div>
+                <div>
+                  <a href="#">
+                    <img
+                      src="../assets/images/blogs/blog-3.webp"
+                      alt="Blog Image"
+                      class="w-100"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="link-hover fw-medium fs-6 text-white my-4 d-inline-block"
+                  >
+                    Meet the Duckmen Mascots
+                  </a>
+                  <p class="text-white text-opacity-70 fs-4">
+                    Discover the personalities behind our most iconic
+                    characters—from concept sketches to fan-favorite plush toys,
+                    each mascot has a story that brings the Flying Duckmen
+                    universe to life.
+                  </p>
+                  <a
+                    href="#"
+                    class="link-hover text-white d-flex w-fit fs-3 fw-semibold gap-2 align-items-center"
+                  >
+                    Read More
+                    <iconify-icon
+                      icon="ph:caret-right"
+                      class="fs-3 text-white bg-primary"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  FAQ Section -->
+      <section>
+        <div class="container border-top border-border py-5 py-lg-11">
+          <div class="row row-gap-4">
+            <div class="col-xl-6 col-12">
+              <div
+                class="d-flex align-items-center justify-content-start gap-2 mb-6"
+              >
+                <div class="h-16 border border-primary"></div>
+                <p class="mb-0 text-white fs-3 fw-semibold text-uppercase">FAQs</p>
+              </div>
+              <h2 class="mb-0 fs-11 fw-medium text-white">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div class="col-xl-6 col-12">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item border-top border-border">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fs-6 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      What makes Flying Duckmen products unique?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body text-muted pt-0 fs-5">
+                      Yes, we provide post-launch support to ensure smooth
+                      implementation and offer ongoing maintenance packages for
+                      clients needing regular updates or technical assistance.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-border">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fs-6 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      How long does a typical project take?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body text-muted pt-0 fs-5 text-dark">
+                      Yes, we provide post-launch support to ensure smooth
+                      implementation and offer ongoing maintenance packages for
+                      clients needing regular updates or technical assistance.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-border">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fs-6 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      Do you offer custom designs, or do you use templates?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body text-muted pt-0 fs-5 text-dark">
+                      Yes, we provide post-launch support to ensure smooth
+                      implementation and offer ongoing maintenance packages for
+                      clients needing regular updates or technical assistance.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-border">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fs-6 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      What's the cost of a project?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body text-muted pt-0 fs-5 text-dark">
+                      Yes, we provide post-launch support to ensure smooth
+                      implementation and offer ongoing maintenance packages for
+                      clients needing regular updates or technical assistance.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom border-border">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fs-6 fw-bold"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      Do you provide ongoing support after project completion?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body text-muted pt-0 fs-5 text-dark">
+                      Yes, we provide post-launch support to ensure smooth
+                      implementation and offer ongoing maintenance packages for
+                      clients needing regular updates or technical assistance.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section>
+        <div class="container border-top border-border py-11">
+          <div
+            class="d-flex align-items-center justify-content-start gap-2 mb-6"
+          >
+            <div class="h-16 border border-primary"></div>
+            <p class="mb-0 text-white fs-3 fw-semibold text-uppercase">newsletter</p>
+          </div>
+          <div class="row justify-content-between row-gap-4">
+            <div class="col-xl-5">
+              <div>
+                <h2 class="fw-medium fs-11 text-white mw-85">
+                  Sign up for news releases and product updates
+                </h2>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <form>
+                <div
+                  class="d-flex justify-content-lg-end flex-lg-row flex-column gap-2"
+                >
+                  <input
+                    type="text"
+                    class="bg-white bg-opacity-10 text-white border-0 py-3 w-lg-50 rounded-pill px-6"
+                    placeholder="e-mail"
+                  />
+                  <button
+                    class="btn fs-3 fw-semibold text-white text-uppercase"
+                  >
+                    <span class="p-1 rounded-circle bg-white"></span>
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer bg-black">
+      <div class="container pt-5 pt-5 pt-lg-11 border-top border-border">
+        <div class="row row-gap-4 pb-11 border-bottom border-border">
+          <div class="col-xxl-4 col-md-6 mb-8 mb-xl-0">
+            <div class="d-flex flex-column gap-8 pe-xl-5">
+              <h2 class="mb-0 text-white fs-7">Flying Duckmen</h2>
+              <p class="text-white text-opacity-70">
+                Flying Duckmen creates bold mascots and streetwear for fans who
+                rep loud, live bold, and lead with character-driven style.
+              </p>
+              <div class="d-flex gap-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-hover text-white gap-3 fs-5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_1_883)">
+                      <path
+                        d="M11.8619 8.46875L19.1472 0H17.4206L11.095 7.35313L6.0425 0H0.214996L7.85531 11.1194L0.214996 20H1.94156L8.62187 12.2348L13.9575 20H19.785L11.8614 8.46875H11.8619ZM9.49718 11.2172L8.72297 10.11L2.56359 1.29969H5.21547L10.1859 8.41L10.96 9.51719L17.4214 18.7594H14.7698L9.49718 11.2177V11.2172Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_883">
+                        <rect width="20" height="20" fill="currentColor" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-hover gap-3 text-white fs-5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="link-hover gap-3 text-white fs-5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.028 2C14.153 2.003 14.724 2.009 15.217 2.023L15.411 2.03C15.635 2.038 15.856 2.048 16.123 2.06C17.187 2.11 17.913 2.278 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8307 4.17773 21.2242 4.78247 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.952 8.144 21.962 8.365 21.97 8.59L21.976 8.784C21.991 9.276 21.997 9.847 21.999 10.972L22 11.718V13.028C22.0024 13.7574 21.9948 14.4868 21.977 15.216L21.971 15.41C21.963 15.635 21.953 15.856 21.941 16.122C21.891 17.187 21.721 17.912 21.475 18.55C21.2242 19.2175 20.8307 19.8223 20.322 20.322C19.8223 20.8307 19.2175 21.2242 18.55 21.475C17.913 21.722 17.187 21.89 16.123 21.94L15.411 21.97L15.217 21.976C14.724 21.99 14.153 21.997 13.028 21.999L12.282 22H10.973C10.2432 22.0026 9.51351 21.9949 8.78399 21.977L8.58999 21.971C8.3526 21.962 8.11526 21.9517 7.87799 21.94C6.81399 21.89 6.08799 21.722 5.44999 21.475C4.78282 21.2241 4.17843 20.8306 3.67899 20.322C3.16993 19.8224 2.7761 19.2176 2.52499 18.55C2.27799 17.913 2.10999 17.187 2.05999 16.122L2.02999 15.41L2.02499 15.216C2.00656 14.4868 1.99822 13.7574 1.99999 13.028V10.972C1.99722 10.2426 2.00456 9.5132 2.02199 8.784L2.02899 8.59C2.03699 8.365 2.04699 8.144 2.05899 7.878C2.10899 6.813 2.27699 6.088 2.52399 5.45C2.77568 4.7822 3.17021 4.17744 3.67999 3.678C4.17914 3.16955 4.78318 2.77607 5.44999 2.525C6.08799 2.278 6.81299 2.11 7.87799 2.06C8.14399 2.048 8.36599 2.038 8.58999 2.03L8.78399 2.024C9.51318 2.00623 10.2426 1.99857 10.972 2.001L13.028 2ZM12 7C10.6739 7 9.40214 7.52678 8.46446 8.46447C7.52677 9.40215 6.99999 10.6739 6.99999 12C6.99999 13.3261 7.52677 14.5979 8.46446 15.5355C9.40214 16.4732 10.6739 17 12 17C13.3261 17 14.5978 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5978 7.52678 13.3261 7 12 7ZM12 9C12.394 8.99993 12.7841 9.07747 13.1481 9.22817C13.5121 9.37887 13.8428 9.5998 14.1215 9.87833C14.4001 10.1569 14.6211 10.4875 14.7719 10.8515C14.9228 11.2154 15.0004 11.6055 15.0005 11.9995C15.0006 12.3935 14.923 12.7836 14.7723 13.1476C14.6216 13.5116 14.4007 13.8423 14.1222 14.121C13.8436 14.3996 13.513 14.6206 13.149 14.7714C12.785 14.9223 12.395 14.9999 12.001 15C11.2053 15 10.4423 14.6839 9.87967 14.1213C9.31706 13.5587 9.00099 12.7956 9.00099 12C9.00099 11.2044 9.31706 10.4413 9.87967 9.87868C10.4423 9.31607 11.2053 9 12.001 9M17.251 5.5C16.9195 5.5 16.6015 5.6317 16.3671 5.86612C16.1327 6.10054 16.001 6.41848 16.001 6.75C16.001 7.08152 16.1327 7.39946 16.3671 7.63388C16.6015 7.8683 16.9195 8 17.251 8C17.5825 8 17.9005 7.8683 18.1349 7.63388C18.3693 7.39946 18.501 7.08152 18.501 6.75C18.501 6.41848 18.3693 6.10054 18.1349 5.86612C17.9005 5.6317 17.5825 5.5 17.251 5.5Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xxl-2 mb-8 mb-xl-0">
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+              <li>
+                <p class="fs-5 text-white">Contact</p>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  +1 417 369 4255
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  hi@flyingduckmen.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xxl-2 mb-8 mb-xl-0">
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+              <li>
+                <p class="fs-5 text-white">Shop</p>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Viking Mascot
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Griffin Mascot
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Shop All
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xxl-2 mb-8 mb-xl-0">
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+              <li>
+                <p class="fs-5 text-white">Company</p>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xxl-2 mb-8 mb-xl-0">
+            <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+              <li>
+                <p class="fs-5 text-white">Customer care</p>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Refund Policy
+                </a>
+              </li>
+              <li>
+                <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                  Shipping Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between py-8">
+          <p class="text-white text-opacity-70 fs-3">
+            © 2025 Flying Duckmen. Powered by WooCommerce
+          </p>
+          <div class="d-flex align-items-center gap-4">
+            <a class="fs-3 text-white fw-semibold link-hover" href="#"
+              >Privacy Policy</a
+            >
+            <a class="fs-3 text-white fw-semibold link-hover" href="#"
+              >Refund Policy</a
+            >
+            <a class="fs-3 text-white fw-semibold link-hover" href="#"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../assets/libs/aos-master/dist/aos.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <!-- solar icons -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </body>
+</html>
