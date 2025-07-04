@@ -16547,7 +16547,7 @@ textarea.form-control-lg {
   animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
 }
 .header .logo {
-  scale: 1;
+  scale: 0.8;
   transition-duration: 300ms;
 }
 @media (max-width: 991.98px) {
@@ -16559,8 +16559,11 @@ textarea.form-control-lg {
   padding: 20px 0;
   background-color: var(--bs-black);
 }
+.header.fixed-header .header-wrapper {
+  height: 50px;
+}
 .header.fixed-header .logo {
-  scale: 0.8;
+  scale: 0.5;
   transition-duration: 300ms;
 }
 .header.fixed-header .light-dark {
@@ -16581,14 +16584,17 @@ textarea.form-control-lg {
 .header .toggle-menu[aria-expanded=true] .close {
   display: block;
 }
-.header .toggle-menu .menu-icon {
-  color: var(--bs-white) !important;
+.header .cart-badge {
+  top: -3px;
+  right: -3px;
 }
-.header .logo .logo-dark {
-  display: none;
+.header .header-menu .header-item .header-link.active {
+  border-left: 4px solid #F02225;
+  padding-left: 16px;
 }
-.header .header-menu .header-item .header-link .animate-spin {
-  transition: 0.5s;
+.header .header-menu .header-item .header-link:hover {
+  padding-left: 16px;
+  transition-duration: 300ms;
 }
 .header .header-menu .header-item .header-link .animate-spin {
   opacity: 0;
@@ -16600,6 +16606,14 @@ textarea.form-control-lg {
   margin-inline-end: 5px;
 }
 
+@media (max-width: 576px) {
+  .header .header-wrapper {
+    height: 60px;
+  }
+  .header .header-wrapper .logo {
+    scale: 0.5 !important;
+  }
+}
 .banner-section {
   background-size: cover;
 }
@@ -16631,7 +16645,7 @@ textarea.form-control-lg {
   background-color: rgba(255, 255, 255, 0.0941176471);
 }
 .accordion-button:not(.collapsed) {
-  background-color: black;
+  background-color: var(--bs-black);
   color: white;
 }
 .accordion-button:not(.collapsed)::after {
@@ -16668,23 +16682,11 @@ textarea.form-control-lg {
 .testimonial-slider .owl-nav .owl-next {
   font-size: 24px !important;
 }
-.testimonial-slider .owl-nav .owl-prev span,
-.testimonial-slider .owl-nav .owl-next span {
-  color: white;
-  padding: 8px 16px !important;
-  background: rgba(255, 255, 255, 0.0941176471) !important;
-  border-radius: 999px;
+.testimonial-slider .owl-nav .owl-prev:hover .scroll-control,
+.testimonial-slider .owl-nav .owl-next:hover .scroll-control {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-.animate-spin {
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(1turn);
-  }
-}
 .mascot .mascot-card {
   flex: 1;
 }
@@ -16695,9 +16697,15 @@ textarea.form-control-lg {
 .mascot .mascot-card .mascot-image .add-cart {
   position: absolute;
   right: -100%;
-  bottom: 68px;
+  bottom: 82px;
   transition: right 300ms ease-in-out;
   width: fit-content;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+}
+.mascot .mascot-card .mascot-image .view:hover,
+.mascot .mascot-card .mascot-image .add-cart:hover {
+  border: 2px solid white;
 }
 .mascot .mascot-card .mascot-image .add-cart {
   bottom: 16px;
@@ -16717,9 +16725,16 @@ textarea.form-control-lg {
   bottom: -100%;
   transition: bottom 300ms ease-in-out;
   width: fit-content;
+  font-size: 20px !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid transparent;
+}
+.product-slider .product-card .product-image .view:hover,
+.product-slider .product-card .product-image .add-cart:hover {
+  border: 2px solid white;
 }
 .product-slider .product-card .product-image:hover .view {
-  bottom: 68px;
+  bottom: 82px;
 }
 .product-slider .product-card .product-image:hover .add-cart {
   bottom: 16px;
@@ -16729,18 +16744,15 @@ textarea.form-control-lg {
   top: -15%;
   right: 0;
   display: flex;
-  gap: 24px;
+  gap: 8px;
 }
 .product-slider .owl-nav .owl-prev,
 .product-slider .owl-nav .owl-next {
-  font-size: 24px !important;
+  font-size: 20px !important;
 }
-.product-slider .owl-nav .owl-prev span,
-.product-slider .owl-nav .owl-next span {
-  color: white;
-  padding: 8px 16px !important;
-  background: rgba(255, 255, 255, 0.0941176471) !important;
-  border-radius: 999px;
+.product-slider .owl-nav .owl-prev:hover .scroll-control,
+.product-slider .owl-nav .owl-next:hover .scroll-control {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .blog a .blog-img {

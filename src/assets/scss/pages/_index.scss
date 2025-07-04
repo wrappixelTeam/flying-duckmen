@@ -32,7 +32,7 @@
     }
 
     &:not(.collapsed) {
-        background-color: black;
+        background-color: var(--bs-black);
         color: white;
 
         &::after {
@@ -80,24 +80,12 @@
         .owl-prev,
         .owl-next {
             font-size: 24px !important;
-
-            span {
-                color: white;
-                padding: 8px 16px !important;
-                background: #ffffff18 !important;
-                border-radius: 999px;
+            &:hover {
+                .scroll-control {
+                    background-color: #ffffff33 !important;
+                }
             }
         }
-    }
-}
-
-.animate-spin {
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(1turn);
     }
 }
 
@@ -112,9 +100,15 @@
             .add-cart {
                 position: absolute;
                 right: -100%;
-                bottom: 68px;
+                bottom: 82px;
                 transition: right 300ms ease-in-out;
                 width: fit-content;
+                background-color: rgba(255, 255, 255, 0.2);
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid white
+                }
             }
 
             .add-cart {
@@ -144,11 +138,18 @@
                 bottom: -100%;
                 transition: bottom 300ms ease-in-out;
                 width: fit-content;
+                font-size: 20px !important;
+                background-color: #ffffff33;
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid white
+                }
             }
 
             &:hover {
                 .view {
-                    bottom: 68px;
+                    bottom: 82px;
                 }
 
                 .add-cart {
@@ -163,17 +164,16 @@
         top: -15%;
         right: 0;
         display: flex;
-        gap: 24px;
+        gap: 8px;
 
         .owl-prev,
         .owl-next {
-            font-size: 24px !important;
+            font-size: 20px !important;
 
-            span {
-                color: white;
-                padding: 8px 16px !important;
-                background: #ffffff18 !important;
-                border-radius: 999px;
+            &:hover {
+                .scroll-control {
+                    background-color: #ffffff33 !important;
+                }
             }
         }
     }

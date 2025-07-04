@@ -16,8 +16,8 @@ $(function () {
     margin: 4,
     startPosition: 0,
     navText: [
-      "<iconify-icon icon='solar:alt-arrow-left-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
-      "<iconify-icon icon='solar:alt-arrow-right-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
+      "<iconify-icon icon='solar:alt-arrow-left-linear' class='bg-border scroll-control rounded-circle fs-5 p-3 text-white'></iconify-icon>",
+      "<iconify-icon icon='solar:alt-arrow-right-linear' class='bg-border scroll-control rounded-circle fs-5 p-3 text-white'></iconify-icon>",
     ],
     responsive: {
       0: {
@@ -43,8 +43,8 @@ $(function () {
     onInitialized: setActiveEffect,
     onTranslated: setActiveEffect,
     navText: [
-      "<iconify-icon icon='solar:alt-arrow-left-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
-      "<iconify-icon icon='solar:alt-arrow-right-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
+      "<iconify-icon icon='solar:alt-arrow-left-linear' class='bg-border scroll-control rounded-circle fs-5 p-3 text-white'></iconify-icon>",
+      "<iconify-icon icon='solar:alt-arrow-right-linear' class='bg-border scroll-control rounded-circle fs-5 p-3 text-white'></iconify-icon>",
     ],
     responsive: {
       0: {

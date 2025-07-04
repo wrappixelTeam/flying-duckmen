@@ -5,7 +5,7 @@
     animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
 
     .logo {
-        scale: 1;
+        scale: 0.8;
         transition-duration: 300ms;
     }
 
@@ -17,8 +17,12 @@
         padding: 20px 0;
         background-color: var(--bs-black);
 
+        .header-wrapper {
+            height: 50px;
+        }
+
         .logo {
-            scale: 0.8;
+            scale: 0.5;
             transition-duration: 300ms;
         }
 
@@ -30,6 +34,7 @@
 
     .toggle-menu {
         transition-duration: 300ms;
+
         &[aria-expanded="false"] {
             .close {
                 display: none;
@@ -49,24 +54,25 @@
                 display: block;
             }
         }
-
-        .menu-icon {
-            color: var(--bs-white) !important;
-        }
     }
 
-    .logo {
-        .logo-dark {
-            display: none;
-        }
+    .cart-badge {
+        top: -3px;
+        right: -3px;
     }
 
     .header-menu {
-
         .header-item {
+            .header-link.active {
+                border-left: 4px solid $primary;
+                padding-left: 16px;
+            }
+
             .header-link {
-                .animate-spin {
-                    transition: 0.5s;
+                &:hover {
+                    // border-left: 4px solid $primary;
+                    padding-left: 16px;
+                    transition-duration: 300ms;
                 }
 
                 .animate-spin {
@@ -86,4 +92,15 @@
         }
     }
 
+}
+
+@media (max-width:576px) {
+    .header {
+        .header-wrapper {
+            height: 60px;
+            .logo {
+                scale: 0.5 !important;
+            }
+        }
+    }
 }
