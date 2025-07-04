@@ -15,6 +15,10 @@ $(function () {
     dots: false,
     margin: 4,
     startPosition: 0,
+    navText: [
+      "<iconify-icon icon='solar:alt-arrow-left-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
+      "<iconify-icon icon='solar:alt-arrow-right-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
+    ],
     responsive: {
       0: {
         items: 1,
@@ -34,8 +38,14 @@ $(function () {
     nav: true,
     dots: false,
     margin: 50,
-    center: true,
+    center: false,
     startPosition: 0,
+    onInitialized: setActiveEffect,
+    onTranslated: setActiveEffect,
+    navText: [
+      "<iconify-icon icon='solar:alt-arrow-left-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
+      "<iconify-icon icon='solar:alt-arrow-right-linear' class='bg-border rounded-circle fs-7 p-2 text-white'></iconify-icon>",
+    ],
     responsive: {
       0: {
         items: 1,
@@ -48,6 +58,19 @@ $(function () {
       },
     },
   });
+
+  function setActiveEffect(event) {
+    // Remove existing active-effect classes
+    $(".testimonial-slider .item").removeClass("active-effect");
+
+    // Get currently visible items
+    let visibleItems = $(".testimonial-slider .owl-item.active");
+
+    // Add class only to the first visible item
+    if (visibleItems.length > 0) {
+      $(visibleItems[0]).find(".item").addClass("active-effect");
+    }
+  }
 
   // Aos
   AOS.init({

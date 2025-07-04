@@ -4,6 +4,11 @@
     transition: all 0.5s ease-in-out;
     animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
 
+    .logo {
+        scale: 1;
+        transition-duration: 300ms;
+    }
+
     @include media-breakpoint-down(lg) {
         padding: 20px 0;
     }
@@ -13,23 +18,40 @@
         background-color: var(--bs-black);
 
         .logo {
-            .logo-dark {
-                display: block;
-            }
-
-            .logo-white {
-                display: none;
-            }
+            scale: 0.8;
+            transition-duration: 300ms;
         }
 
         .light-dark {
             color: var(--bs-dark) !important;
         }
 
-        .toggle-menu {
-            .menu-icon {
-                color: var(--bs-white) !important;
+    }
+
+    .toggle-menu {
+        transition-duration: 300ms;
+        &[aria-expanded="false"] {
+            .close {
+                display: none;
             }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        &[aria-expanded="true"] {
+            .hamburger {
+                display: none;
+            }
+
+            .close {
+                display: block;
+            }
+        }
+
+        .menu-icon {
+            color: var(--bs-white) !important;
         }
     }
 
