@@ -136,6 +136,7 @@
     .product-card {
         .product-image {
             overflow: hidden;
+
             .view,
             .add-cart {
                 position: absolute;
@@ -173,6 +174,21 @@
                 padding: 8px 16px !important;
                 background: #ffffff18 !important;
                 border-radius: 999px;
+            }
+        }
+    }
+}
+
+.blog {
+    a {
+        .blog-img {
+            overflow: hidden;
+        }
+
+        &:hover {
+            img {
+                scale: 1.1;
+                transition-duration: 300ms;
             }
         }
     }
