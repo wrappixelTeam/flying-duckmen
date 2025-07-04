@@ -16616,6 +16616,7 @@ textarea.form-control-lg {
 }
 .banner-section {
   background-size: cover;
+  height: 100vh;
 }
 .banner-section::before {
   content: "";
@@ -16685,6 +16686,14 @@ textarea.form-control-lg {
 .testimonial-slider .owl-nav .owl-prev:hover .scroll-control,
 .testimonial-slider .owl-nav .owl-next:hover .scroll-control {
   background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.checkout-btn:hover {
+  background-color: white !important;
+  color: #0B0808 !important;
+}
+.checkout-btn:hover span {
+  background-color: #0B0808 !important;
 }
 
 .mascot .mascot-card {
@@ -16775,12 +16784,28 @@ textarea.form-control-lg {
   width: 50%;
 }
 
+.newsletter-section {
+  border-top: 1px solid var(--bs-border);
+}
+
 @media (max-width: 768px) {
   .product-slider .owl-nav {
     top: -10%;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 576px) {
+  .product-slider .owl-nav {
+    top: -13%;
+  }
+  .newsletter-section {
+    border-top: 0;
+  }
+  .testimonial-slider .owl-nav {
+    top: -30%;
+  }
+  .banner-section {
+    height: 60vh;
+  }
   .newsletter-input {
     width: 100%;
   }
