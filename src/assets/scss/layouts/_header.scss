@@ -5,7 +5,7 @@
     animation: 0.5s ease-in-out 0s normal none 1 running fadeInDown;
 
     .logo {
-        scale: 0.8;
+        max-width: 160px;
         transition-duration: 300ms;
     }
 
@@ -22,7 +22,7 @@
         }
 
         .logo {
-            scale: 0.5;
+            scale: 0.8;
             transition-duration: 300ms;
         }
 
@@ -98,8 +98,9 @@
     .header {
         .header-wrapper {
             height: 60px;
+
             .logo {
-                scale: 0.5 !important;
+                width: 80px !important;
             }
         }
     }

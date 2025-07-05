@@ -1,240 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | Flying Duckmen</title>
-    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/logo-white.svg" />
-    <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="header position-fixed start-0 top-0 w-100">
-      <div class="container">
-        <div
-          class="header-wrapper d-flex align-items-center justify-content-between"
-        >
-          <div class="logo">
-            <a href="index.html">
-              <img src="../assets/images/logos/logo-white.svg" alt="logo" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Flying Duckmen</title>
+  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/logo-white.svg" />
+  <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+  <header class="header position-fixed start-0 top-0 w-100">
+    <div class="container">
+      <div class="header-wrapper d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html">
+            <img src="../assets/images/logos/logo-white.svg" alt="logo" class="d-block w-100" />
+          </a>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <a href="#" class="d-inline-flex text-white link-hover">
+            <iconify-icon icon="ph:user-circle" class="fs-7"></iconify-icon>
+          </a>
+          <div class="position-relative d-inline-flex">
+            <a href="#" class="d-inline-flex text-white link-hover position-relative cart-icon-trigger" id="cartIcon">
+              <iconify-icon icon="ph:shopping-cart" class="fs-7"></iconify-icon>
+              <p class="mb-0 text-white bg-primary rounded-circle px-1 fs-1 position-absolute cart-badge">
+                2
+              </p>
+              <!-- Cart Dropdown Box -->
             </a>
-          </div>
-          <div class="d-flex align-items-center gap-4">
-            <a href="#" class="d-inline-flex text-white link-hover">
-              <iconify-icon icon="ph:user-circle" class="fs-7"></iconify-icon>
-            </a>
-            <div class="position-relative d-inline-flex">
-              <a
-                href="#"
-                class="d-inline-flex text-white link-hover position-relative cart-icon-trigger"
-                id="cartIcon"
-              >
-                <iconify-icon
-                  icon="ph:shopping-cart"
-                  class="fs-7"
-                ></iconify-icon>
-                <p
-                  class="mb-0 text-white bg-primary rounded-circle px-1 fs-1 position-absolute cart-badge"
-                >
-                  2
-                </p>
-                <!-- Cart Dropdown Box -->
-              </a>
-              <div
-                id="cartDropdown"
-                class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4 cart-dropdown-box"
-                style="
+            <div id="cartDropdown" class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4 cart-dropdown-box"
+              style="
                   min-width: 350px;
                   display: none;
                   position: absolute;
                   right: 0;
                   top: 120%;
                   z-index: 1050;
-                "
-              >
-                <div
-                  class="d-flex flex-column justify-content-between"
-                  style="min-height: 200px"
-                >
-                  <ul class="list-unstyled mb-4 d-flex flex-column gap-3">
-                    <!-- Cart Item 1 -->
-                    <li
-                      class="d-flex align-items-center justify-content-between gap-3 border-bottom pb-3"
-                    >
-                      <img
-                        src="../assets/images/mascot/mascot-1.webp"
-                        alt="Product"
-                        class="img-fluid rounded"
-                        style="width: 60px; height: 60px; object-fit: cover"
-                      />
-                      <div class="flex-grow-1">
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <p class="mb-1 text-white fs-4">
-                            Viking Truck Mascot
-                          </p>
-                          <botton class="link-hover">
-                            <iconify-icon icon="ph:trash"></iconify-icon>
-                          </botton>
-                        </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <div class="d-flex align-items-center gap-2">
-                            <button
-                              class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50"
-                            >
-                              -
-                            </button>
-                            <span class="text-white fs-4">1</span>
-                            <button
-                              class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50"
-                            >
-                              +
-                            </button>
-                          </div>
-                          <span class="text-white fs-4">$79.00</span>
-                        </div>
+                ">
+              <div class="d-flex flex-column justify-content-between" style="min-height: 200px">
+                <ul class="list-unstyled mb-4 d-flex flex-column gap-3">
+                  <!-- Cart Item 1 -->
+                  <li class="d-flex align-items-center justify-content-between gap-3 border-bottom pb-3">
+                    <img src="../assets/images/mascot/mascot-1.webp" alt="Product" class="img-fluid rounded"
+                      style="width: 60px; height: 60px; object-fit: cover" />
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-1 text-white fs-4">
+                          Viking Truck Mascot
+                        </p>
+                        <botton class="link-hover">
+                          <iconify-icon icon="ph:trash"></iconify-icon>
+                        </botton>
                       </div>
-                    </li>
-                    <!-- Cart Item 2 -->
-                    <li
-                      class="d-flex align-items-center justify-content-between gap-3 border-bottom pb-3"
-                    >
-                      <img
-                        src="../assets/images/products/product-1.webp"
-                        alt="Product"
-                        class="img-fluid rounded w-100"
-                        style="max-width: 60px; height: 60px; object-fit: cover"
-                      />
-                      <div class="flex-grow-1">
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <p class="mb-1 text-white fs-4">Blackout Hoodie</p>
-                          <botton class="link-hover">
-                            <iconify-icon icon="ph:trash"></iconify-icon>
-                          </botton>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                          <button
+                            class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">
+                            -
+                          </button>
+                          <span class="text-white fs-4">1</span>
+                          <button
+                            class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">
+                            +
+                          </button>
                         </div>
-                        <div
-                          class="d-flex align-items-center justify-content-between"
-                        >
-                          <div class="d-flex align-items-center gap-2">
-                            <button
-                              class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50"
-                            >
-                              -
-                            </button>
-                            <span class="text-white fs-4">1</span>
-                            <button
-                              class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50"
-                            >
-                              +
-                            </button>
-                          </div>
-                          <span class="text-white fs-4">$35.00</span>
-                        </div>
+                        <span class="text-white fs-4">$79.00</span>
                       </div>
-                    </li>
-                  </ul>
-                  <div class="d-flex flex-column gap-3">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-2"
-                    >
-                      <span class="text-white fs-5 fw-semibold">Total</span>
-                      <span class="text-white fs-5 fw-semibold">$126.00</span>
                     </div>
-                    <button
-                      class="btn rounded-pill fs-5 fw-semibold w-100 py-3 text-white d-flex align-items-center justify-content-center gap-2"
-                    >
-                      <span class="p-1 rounded-circle bg-white"></span>
-                      PROCEED TO CHECKOUT
-                    </button>
-                    <button
-                      class="bg-transparent text-white rounded-pill fs-5 fw-semibold w-100 py-3 border-1 border-white checkout-btn d-flex align-items-center justify-content-center gap-2"
-                    >
-                      <span class="p-1 rounded-circle bg-white"></span>
-                      CONTINUE SHOPPING
-                    </button>
+                  </li>
+                  <!-- Cart Item 2 -->
+                  <li class="d-flex align-items-center justify-content-between gap-3 border-bottom pb-3">
+                    <img src="../assets/images/products/product-1.webp" alt="Product" class="img-fluid rounded w-100"
+                      style="max-width: 60px; height: 60px; object-fit: cover" />
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <p class="mb-1 text-white fs-4">Blackout Hoodie</p>
+                        <botton class="link-hover">
+                          <iconify-icon icon="ph:trash"></iconify-icon>
+                        </botton>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2">
+                          <button
+                            class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">
+                            -
+                          </button>
+                          <span class="text-white fs-4">1</span>
+                          <button
+                            class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">
+                            +
+                          </button>
+                        </div>
+                        <span class="text-white fs-4">$35.00</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="text-white fs-5 fw-semibold">Total</span>
+                    <span class="text-white fs-5 fw-semibold">$126.00</span>
                   </div>
+                  <button
+                    class="btn rounded-pill fs-5 fw-semibold w-100 py-3 text-white d-flex align-items-center justify-content-center gap-2">
+                    <span class="p-1 rounded-circle bg-white"></span>
+                    PROCEED TO CHECKOUT
+                  </button>
+                  <button
+                    class="bg-transparent text-white rounded-pill fs-5 fw-semibold w-100 py-3 border-1 border-white checkout-btn d-flex align-items-center justify-content-center gap-2">
+                    <span class="p-1 rounded-circle bg-white"></span>
+                    CONTINUE SHOPPING
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="btn-group">
-              <button
-                class="toggle-menu bg-transparent border-0 d-flex align-items-center justify-content-center rounded-circle text-white link-hover"
-                type="button"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="true"
-                aria-expanded="false"
-              >
-                <iconify-icon
-                  icon="solar:hamburger-menu-line-duotone"
-                  class="menu-icon fs-7 hamburger"
-                ></iconify-icon>
-                <iconify-icon
-                  icon="ph:x"
-                  class="menu-icon fs-7 close"
-                ></iconify-icon>
-              </button>
-              <ul
-                class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4"
-                style="min-width: 350px"
-              >
-                <div class="d-flex flex-column justify-content-between">
-                  <ul
-                    class="header-menu list-unstyled mb-0 d-flex flex-column gap-3"
-                  >
-                    <li class="header-item">
-                      <a
-                        href="index.html"
-                        class="fs-9 fw-normal text-white header-link active"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#" class="fs-9 fw-normal text-white header-link">
-                        Shop
-                      </a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#" class="fs-9 fw-normal text-white header-link">
-                        About
-                      </a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#" class="fs-9 fw-normal text-white header-link">
-                        Blog
-                      </a>
-                    </li>
-                    <li class="header-item">
-                      <a href="#" class="fs-9 fw-normal text-white header-link">
-                        Contact
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="mt-8">
-                    <a href="#" class="fs-5 text-white-50 mb-1 link-hover"
-                      >+1 417 369 4255</a
-                    >
-                    <a href="#" class="fs-7 text-white link-hover"
-                      >hi@flyingduckmen.com</a
-                    >
-                  </div>
+          </div>
+          <div class="btn-group">
+            <button
+              class="toggle-menu bg-transparent border-0 d-flex align-items-center justify-content-center rounded-circle text-white link-hover"
+              type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+              <iconify-icon icon="solar:hamburger-menu-line-duotone" class="menu-icon fs-7 hamburger"></iconify-icon>
+              <iconify-icon icon="ph:x" class="menu-icon fs-7 close"></iconify-icon>
+            </button>
+            <ul class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4" style="min-width: 350px">
+              <div class="d-flex flex-column justify-content-between">
+                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li class="header-item">
+                    <a href="index.html" class="fs-9 fw-normal text-white header-link ">
+                      Home
+                    </a>
+                  </li>
+                  <li class="header-item">
+                    <a href="product-list.html" class="fs-9 fw-normal text-white active header-link">
+                      Shop
+                    </a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="fs-9 fw-normal text-white header-link">
+                      About
+                    </a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="fs-9 fw-normal text-white header-link">
+                      Blog
+                    </a>
+                  </li>
+                  <li class="header-item">
+                    <a href="#" class="fs-9 fw-normal text-white header-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+                <div class="mt-8">
+                  <a href="#" class="fs-5 text-white-50 mb-1 link-hover">+1
+                    417 369 4255</a>
+                  <a href="#" class="fs-7 text-white link-hover">hi@flyingduckmen.com</a>
                 </div>
-              </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper overflow-hidden product-list-page">
+    <!-- Banner Section -->
+    <section class="banner-section position-relative d-flex align-items-center min-vh-50 overflow-hidden bg-cover"
+      style="
+          background-image: url('../assets/images/backgrounds/homepage-banner-image.webp');
+        ">
+      <div class="container">
+        <div class="d-flex flex-column gap-4 pb-8 position-relative z-1">
+          <div class="d-flex flex-column align-items-center justify-content-center gap-3" data-aos="fade-up"
+            data-aos-delay="200" data-aos-duration="1000">
+            <h1 class="mb-0 fs-15 text-white fw-semibold text-center">
+              Our Products
+            </h1>
+            <div class="d-flex align-items-center gap-2">
+              <a href="index.html" class="fs-3 fw-semibold text-white text-uppercase text-opacity-70 link-hover">
+                Home
+              </a>
+              <iconify-icon icon="solar:alt-arrow-right-outline" class="fs-3 text-white text-opacity-70"></iconify-icon>
+              <p class="fs-3 fw-semibold text-white text-uppercase mb-0">
+                Products
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="page-wrapper overflow-hidden">
-        
-    </div>
-    <footer class="footer bg-black">
+    </section>
+
+    <!-- Product List Section -->
+    <section class="pb-xl-13 pb-10">
+      <div class="container">
+        <div class="products row row-gap-4">
+          <div class="product-card col-xl-4 col-md-6 col-12">
+            <a href="#" class="product-image mascot position-relative">
+              <img src="../assets/images/mascot/mascot-1.webp" alt="product" class="w-100" />
+              <button class="position-absolute z-1 end-16 view text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:eye-bold"></iconify-icon>
+              </button>
+              <button class="position-absolute z-1 end-16 add-cart text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:plus-bold"></iconify-icon>
+              </button>
+            </a>
+            <div class="mt-4">
+              <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
+                <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
+                  Viking Truck Mascot
+                </a>
+                <div class="d-flex">
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                </div>
+              </div>
+              <p class="text-white text-opacity-70">$79.99</p>
+            </div>
+          </div>
+          <div class="product-card col-xl-4 col-md-6 col-12">
+            <a href="#" class="product-image mascot position-relative">
+              <img src="../assets/images/mascot/mascot-2.webp" alt="mascot" class="w-100" />
+              <div class="position-absolute top-16 z-1 end-0">
+                <p class="text-uppercase text-white py-1 px-2 bg-primary fs-2 fw-semibold">
+                  save $10.00
+                </p>
+              </div>
+              <button class="position-absolute z-1 view text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:eye-bold"></iconify-icon>
+              </button>
+              <button class="position-absolute z-1 add-cart text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:plus-bold"></iconify-icon>
+              </button>
+            </a>
+            <div class="mt-4">
+              <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
+                <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
+                  Griffin Truck Mascot
+                </a>
+                <div class="d-flex">
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-1">
+                <del class="text-opacity-40">$98.50</del>
+                <p class="text-white text-opacity-70">$88.50</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-card col-xl-4 col-md-6 col-12">
+            <a href="#" class="product-image position-relative">
+              <img src="../assets/images/products/product-1.webp" alt="product" class="w-100" />
+              <button class="position-absolute z-1 end-16 view text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:eye-bold"></iconify-icon>
+              </button>
+              <button class="position-absolute z-1 end-16 add-cart text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:plus-bold"></iconify-icon>
+              </button>
+            </a>
+            <div class="mt-4">
+              <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
+                <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
+                  Blackout Hoodie
+                </a>
+                <div class="d-flex">
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                </div>
+              </div>
+              <p class="text-white text-opacity-70">$79.99</p>
+            </div>
+          </div>
+          <div class="product-card col-xl-4 col-md-6 col-12">
+            <a href="#" class="product-image position-relative">
+              <img src="../assets/images/products/product-2.webp" alt="product" class="w-100" />
+              <button class="position-absolute z-1 end-16 view text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:eye-bold"></iconify-icon>
+              </button>
+              <button class="position-absolute z-1 end-16 add-cart text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:plus-bold"></iconify-icon>
+              </button>
+            </a>
+            <div class="mt-4">
+              <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
+                <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
+                  Rough & Ready Cap
+                </a>
+                <div class="d-flex">
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                </div>
+              </div>
+              <p class="text-white text-opacity-70">$79.99</p>
+            </div>
+          </div>
+          <div class="product-card col-xl-4 col-md-6 col-12">
+            <a href="#" class="product-image position-relative">
+              <img src="../assets/images/products/product-3.webp" alt="product" class="w-100" />
+              <div class="position-absolute top-16 z-1 end-0">
+                <p class="text-uppercase text-white py-1 px-2 bg-primary fs-2 fw-semibold">
+                  save $10.00
+                </p>
+              </div>
+              <button class="position-absolute z-1 end-16 view text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:eye-bold"></iconify-icon>
+              </button>
+              <button class="position-absolute z-1 end-16 add-cart text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:plus-bold"></iconify-icon>
+              </button>
+            </a>
+            <div class="mt-4">
+              <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
+                <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
+                  Quack Attack Tee
+                </a>
+                <div class="d-flex">
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-1">
+                <del class="text-opacity-40">$98.50</del>
+                <p class="text-white text-opacity-70">$88.50</p>
+              </div>
+            </div>
+          </div>
+          <div class="product-card col-xl-4 col-md-6 col-12">
+            <a href="#" class="product-image position-relative">
+              <img src="../assets/images/products/product-4.webp" alt="product" class="w-100" />
+              <button class="position-absolute z-1 end-16 view text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:eye-bold"></iconify-icon>
+              </button>
+              <button class="position-absolute z-1 end-16 add-cart text-white p-3 rounded-circle d-flex">
+                <iconify-icon icon="ph:plus-bold"></iconify-icon>
+              </button>
+            </a>
+            <div class="mt-4">
+              <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
+                <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
+                  Elite Logo Tee
+                </a>
+                <div class="d-flex">
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                  <div>
+                    <iconify-icon icon="tabler:star-filled" class="text-white" />
+                  </div>
+                </div>
+              </div>
+              <p class="text-white text-opacity-70">$79.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-7 pt-xl-12 pt-8 justify-content-center pagination">
+          <button class="btn">
+            <iconify-icon icon="ph:caret-left-bold" class="fs-5 text-white"></iconify-icon>
+          </button>
+          <div class="d-flex align-items-center gap-4 ">
+            <a href="#" class="text-white link-hover">1</a>
+            <a href="#" class="text-white link-hover">2</a>
+            <a href="#" class="text-white link-hover">3</a>
+            <a href="#" class="text-white link-hover">4</a>
+          </div>
+          <button class="btn">
+            <iconify-icon icon="ph:caret-right-bold" class="fs-5 text-white"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section>
+      <div class="container border-top border-border py-12">
+        <div class="d-flex align-items-center justify-content-start gap-2 mb-6">
+          <div class="h-16 border border-primary"></div>
+          <p class="mb-0 text-white fs-3 fw-semibold text-uppercase">
+            newsletter
+          </p>
+        </div>
+        <div class="row justify-content-between align-items-center row-gap-4">
+          <div class="col-xl-5">
+            <div>
+              <h2 class="fw-medium fs-11 text-white mw-85">
+                Sign up for news releases and product updates
+              </h2>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <form>
+              <div class="d-flex justify-content-xl-end flex-md-row flex-column gap-2">
+                <input type="email"
+                  class="bg-white bg-opacity-10 text-white border-0 py-3 newsletter-input rounded-pill px-6"
+                  placeholder="E-MAIL" />
+                <button class="btn fs-3 fw-semibold text-white text-uppercase">
+                  <span class="p-1 rounded-circle bg-white"></span>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer bg-black">
     <div class="container pt-5 pt-5 pt-lg-11 border-top border-border">
       <div class="row row-gap-8 pb-11 border-bottom border-border">
         <div class="col-xxl-4 col-md-6">
@@ -253,9 +501,9 @@
                       fill="currentColor" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_1_883">
+                    <clippath id="clip0_1_883">
                       <rect width="20" height="20" fill="currentColor" />
-                    </clipPath>
+                    </clippath>
                   </defs>
                 </svg>
               </a>
@@ -369,13 +617,17 @@
         <p class="text-white text-opacity-70 fs-3">
           © 2025 Flying Duckmen. Powered by WooCommerce
         </p>
-        <div class="d-flex align-items-center gap-4">
-          <a class="fs-3 text-white fw-semibold link-hover" href="#">Privacy Policy</a>
-          <a class="fs-3 text-white fw-semibold link-hover" href="#">Refund Policy</a>
-          <a class="fs-3 text-white fw-semibold link-hover" href="#">Terms of Service</a>
+        <div class="d-flex align-items-center flex-sm-nowrap flex-wrap gap-sm-4 gap-3">
+          <a class="fs-3 text-white fw-semibold link-hover" href="#">Privacy
+            Policy</a>
+          <a class="fs-3 text-white fw-semibold link-hover" href="#">Refund
+            Policy</a>
+          <a class="fs-3 text-white fw-semibold link-hover" href="#">Terms of
+            Service</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
@@ -396,5 +648,6 @@
   </script>
   <!-- solar icons -->
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-  </body>
+</body>
+
 </html>
