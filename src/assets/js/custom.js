@@ -8,6 +8,18 @@ $(function () {
     }
   });
 
+  // Cart dropdown toggle
+  const cartIcon = document.getElementById('cartIcon');
+  const cartDropdown = document.getElementById('cartDropdown');
+  document.addEventListener('click', function (e) {
+    if (cartIcon.contains(e.target)) {
+      e.preventDefault();
+      cartDropdown.style.display = cartDropdown.style.display === 'block' ? 'none' : 'block';
+    } else if (!cartDropdown.contains(e.target)) {
+      cartDropdown.style.display = 'none';
+    }
+  });
+
   // product slider
   $(".product-slider").owlCarousel({
     loop: true,

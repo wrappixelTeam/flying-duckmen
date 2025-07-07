@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Flying Duckmen</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/logo-white.svg" />
+    <link rel="stylesheet" href="../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../assets/libs/aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header position-fixed start-0 top-0 w-100">
+        <div class="container">
+            <div class="header-wrapper d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="../assets/images/logos/logo-white.svg" alt="logo" class="d-block w-100" />
+                    </a>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#" class="d-inline-flex text-white link-hover">
+                        <iconify-icon icon="ph:user-circle" class="fs-7"></iconify-icon>
+                    </a>
+                    <div class="position-relative d-inline-flex">
+                        <a href="#" class="d-inline-flex text-white link-hover position-relative cart-icon-trigger"
+                            id="cartIcon">
+                            <iconify-icon icon="ph:shopping-cart" class="fs-7"></iconify-icon>
+                            <p class="mb-0 text-white bg-primary rounded-circle px-1 fs-1 position-absolute cart-badge">
+                                2</p>
+                            <!-- Cart Dropdown Box -->
+                        </a>
+                        <div id="cartDropdown"
+                            class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4 cart-dropdown-box"
+                            style="min-width: 350px; display: none; position: absolute; right: 0; top: 120%; z-index: 1050;">
+                            <div class="d-flex flex-column justify-content-between" style="min-height: 200px;">
+                                <ul class="list-unstyled mb-4 d-flex flex-column gap-3">
+                                    <!-- Cart Item 1 -->
+                                    <li
+                                        class="d-flex align-items-center justify-content-between gap-3 border-bottom pb-3">
+                                        <img src="../assets/images/mascot/mascot-1.webp" alt="Product"
+                                            class="img-fluid rounded"
+                                            style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="mb-1 text-white fs-4">Viking Truck
+                                                    Mascot</p>
+                                                <botton class="link-hover">
+                                                    <iconify-icon icon="ph:trash"></iconify-icon>
+                                                </botton>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <button
+                                                        class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">-</button>
+                                                    <span class="text-white fs-4">1</span>
+                                                    <button
+                                                        class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">+</button>
+                                                </div>
+                                                <span class="text-white fs-4">$79.00</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!-- Cart Item 2 -->
+                                    <li
+                                        class="d-flex align-items-center justify-content-between gap-3 border-bottom pb-3">
+                                        <img src="../assets/images/products/product-1.webp" alt="Product"
+                                            class="img-fluid rounded w-100"
+                                            style="max-width: 60px; height: 60px; object-fit: cover;">
+                                        <div class="flex-grow-1">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="mb-1 text-white fs-4">Blackout Hoodie</p>
+                                                <botton class="link-hover">
+                                                    <iconify-icon icon="ph:trash"></iconify-icon>
+                                                </botton>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <button
+                                                        class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">-</button>
+                                                    <span class="text-white fs-4">1</span>
+                                                    <button
+                                                        class="bg-white-50 px-2 rounded-circle border-0 text-white border bg-secondary bg-opacity-50">+</button>
+                                                </div>
+                                                <span class="text-white fs-4">$35.00</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span class="text-white fs-5 fw-semibold">Total</span>
+                                        <span class="text-white fs-5 fw-semibold">$126.00</span>
+                                    </div>
+                                    <a href="checkout.html"
+                                        class="btn rounded-pill fs-5 fw-semibold w-100 py-3 text-white d-flex align-items-center justify-content-center gap-2">
+                                        <span class="p-1 rounded-circle bg-white"></span>
+                                        PROCEED TO CHECKOUT
+                                    </a>
+                                    <button
+                                        class="bg-transparent text-white rounded-pill fs-5 fw-semibold w-100 py-3 border-1 border-white checkout-btn d-flex align-items-center justify-content-center gap-2">
+                                        <span class="p-1 rounded-circle bg-white"></span>
+                                        CONTINUE SHOPPING
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="btn-group">
+                        <button
+                            class="toggle-menu bg-transparent border-0 d-flex align-items-center justify-content-center rounded-circle text-white link-hover"
+                            type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            <iconify-icon icon="solar:hamburger-menu-line-duotone"
+                                class="menu-icon fs-7 hamburger"></iconify-icon>
+                            <iconify-icon icon="ph:x" class="menu-icon fs-7 close"></iconify-icon>
+                        </button>
+                        <ul class="dropdown-menu bg-black rounded-0 dropdown-menu-end p-4" style="min-width: 350px">
+                            <div class="d-flex flex-column justify-content-between">
+                                <ul class="header-menu list-unstyled mb-0 d-flex flex-column gap-3">
+                                    <li class="header-item">
+                                        <a href="index.html" class="fs-9 fw-normal text-white header-link active">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="product-list.html" class="fs-9 fw-normal text-white header-link">
+                                            Shop
+                                        </a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="#" class="fs-9 fw-normal text-white header-link">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="blog-list.html" class="fs-9 fw-normal text-white header-link">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="header-item">
+                                        <a href="contact.html" class="fs-9 fw-normal text-white header-link">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="mt-8">
+                                    <a href="#" class="fs-5 text-white-50 mb-1 link-hover">+1
+                                        417 369 4255</a>
+                                    <a href="#" class="fs-7 text-white link-hover">hi@flyingduckmen.com</a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-wrapper overflow-hidden pt-12">
+        <!-- Breadcrumb Area -->
+        <div class="py-6 border-top border-bottom border-border">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="index.html"
+                        class="fs-3 fw-semibold text-white text-uppercase text-opacity-70 link-hover">Home</a>
+                    <iconify-icon icon="solar:alt-arrow-right-outline"
+                        class="fs-3 text-white text-opacity-70"></iconify-icon>
+                    <p class="fs-3 fw-semibold text-white text-uppercase mb-0">
+                        Contact
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <section>
+            <div class="container py-sm-11">
+                <div class="row">
+                    <div class="col-md-6 p-0">
+                        <img src="../assets/images/backgrounds/contact-image.webp" alt="contact" class="w-100">
+                    </div>
+                    <div class="col-md-6 bg-border p-md-10 p-8">
+                        <h2 class="text-white">
+                            Contact Us
+                        </h2>
+                        <form class="mt-8">
+                            <div class="mb-7">
+                                <input type="text" name="name" id="name" placeholder="Name*"
+                                    class="bg-black border border-white text-4 border-opacity-25 text-white py-3 px-7 w-100">
+                            </div>
+                            <div class="mb-7">
+                                <input type="email" name="email" id="email" placeholder="Email*"
+                                    class="bg-black border border-white text-4 border-opacity-25 text-white py-3 px-7 w-100">
+                            </div>
+                            <div class="mb-7">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number*"
+                                    class="bg-black border border-white text-4 border-opacity-25 text-white py-3 px-7 w-100">
+                            </div>
+                            <div class="mb-8">
+                                <textarea
+                                    class="form-control bg-black text-white border border-white border-opacity-25 px-7"
+                                    rows="5" placeholder="Write a Message...*"></textarea>
+                            </div>
+                            <button type="submit" class="btn fs-3 px-7 fw-semibold text-white text-uppercase">
+                                Send
+                                <span class="p-1 rounded-circle bg-white"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features Section -->
+        <section>
+            <div class="container">
+                <div class="border border-border d-flex align-items-center flex-lg-nowrap flex-wrap">
+                    <div
+                        class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border">
+                        <iconify-icon icon="ph:headset" class="menu-icon fs-8 text-white"></iconify-icon>
+                        <p class="text-white mb-0 fs-5">Customer Support</p>
+                    </div>
+                    <div
+                        class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border">
+                        <iconify-icon icon="ph:credit-card" class="menu-icon fs-8 text-white"></iconify-icon>
+                        <p class="text-white mb-0 fs-5">Secure Payment</p>
+                    </div>
+                    <div
+                        class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border">
+                        <iconify-icon icon="ph:globe" class="menu-icon fs-8 text-white"></iconify-icon>
+                        <p class="text-white mb-0 fs-5">Free Shipping</p>
+                    </div>
+                    <div
+                        class="py-9 w-100 d-flex align-items-center justify-content-center gap-3 border border-right border-border">
+                        <iconify-icon icon="ph:arrow-counter-clockwise"
+                            class="menu-icon fs-8 text-white"></iconify-icon>
+                        <p class="text-white mb-0 fs-5">30-Days Free Returns</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section>
+            <div class="container py-sm-12 py-5">
+                <div class="d-flex align-items-center justify-content-start gap-2 mb-6">
+                    <div class="h-16 border border-primary"></div>
+                    <p class="mb-0 text-white fs-3 fw-semibold text-uppercase">
+                        newsletter
+                    </p>
+                </div>
+                <div class="row justify-content-between align-items-center row-gap-4">
+                    <div class="col-xl-5">
+                        <div>
+                            <h2 class="fw-medium fs-11 text-white mw-85">
+                                Sign up for news releases and product updates
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <form>
+                            <div class="d-flex justify-content-xl-end flex-md-row flex-column gap-2">
+                                <input type="email"
+                                    class="bg-white bg-opacity-10 text-white border-0 py-3 newsletter-input rounded-pill px-6"
+                                    placeholder="E-MAIL" />
+                                <button class="btn fs-3 fw-semibold text-white text-uppercase">
+                                    <span class="p-1 rounded-circle bg-white"></span>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-black">
+        <div class="container pt-5 pt-5 pt-lg-11 border-top border-border">
+            <div class="row row-gap-8 pb-11 border-bottom border-border">
+                <div class="col-xxl-4 col-md-6">
+                    <div class="d-flex flex-column gap-8 pe-xl-5">
+                        <h2 class="mb-0 text-white fs-7">Flying Duckmen</h2>
+                        <p class="text-white text-opacity-70">
+                            Flying Duckmen creates bold mascots and
+                            streetwear for fans who
+                            rep loud, live bold, and lead with
+                            character-driven style.
+                        </p>
+                        <div class="d-flex gap-4">
+                            <a href="#" target="_blank" class="link-hover text-white gap-3 fs-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_1_883)">
+                                        <path
+                                            d="M11.8619 8.46875L19.1472 0H17.4206L11.095 7.35313L6.0425 0H0.214996L7.85531 11.1194L0.214996 20H1.94156L8.62187 12.2348L13.9575 20H19.785L11.8614 8.46875H11.8619ZM9.49718 11.2172L8.72297 10.11L2.56359 1.29969H5.21547L10.1859 8.41L10.96 9.51719L17.4214 18.7594H14.7698L9.49718 11.2177V11.2172Z"
+                                            fill="currentColor" />
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_1_883">
+                                            <rect width="20" height="20" fill="currentColor" />
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="link-hover gap-3 text-white fs-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="link-hover gap-3 text-white fs-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M13.028 2C14.153 2.003 14.724 2.009 15.217 2.023L15.411 2.03C15.635 2.038 15.856 2.048 16.123 2.06C17.187 2.11 17.913 2.278 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8307 4.17773 21.2242 4.78247 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.952 8.144 21.962 8.365 21.97 8.59L21.976 8.784C21.991 9.276 21.997 9.847 21.999 10.972L22 11.718V13.028C22.0024 13.7574 21.9948 14.4868 21.977 15.216L21.971 15.41C21.963 15.635 21.953 15.856 21.941 16.122C21.891 17.187 21.721 17.912 21.475 18.55C21.2242 19.2175 20.8307 19.8223 20.322 20.322C19.8223 20.8307 19.2175 21.2242 18.55 21.475C17.913 21.722 17.187 21.89 16.123 21.94L15.411 21.97L15.217 21.976C14.724 21.99 14.153 21.997 13.028 21.999L12.282 22H10.973C10.2432 22.0026 9.51351 21.9949 8.78399 21.977L8.58999 21.971C8.3526 21.962 8.11526 21.9517 7.87799 21.94C6.81399 21.89 6.08799 21.722 5.44999 21.475C4.78282 21.2241 4.17843 20.8306 3.67899 20.322C3.16993 19.8224 2.7761 19.2176 2.52499 18.55C2.27799 17.913 2.10999 17.187 2.05999 16.122L2.02999 15.41L2.02499 15.216C2.00656 14.4868 1.99822 13.7574 1.99999 13.028V10.972C1.99722 10.2426 2.00456 9.5132 2.02199 8.784L2.02899 8.59C2.03699 8.365 2.04699 8.144 2.05899 7.878C2.10899 6.813 2.27699 6.088 2.52399 5.45C2.77568 4.7822 3.17021 4.17744 3.67999 3.678C4.17914 3.16955 4.78318 2.77607 5.44999 2.525C6.08799 2.278 6.81299 2.11 7.87799 2.06C8.14399 2.048 8.36599 2.038 8.58999 2.03L8.78399 2.024C9.51318 2.00623 10.2426 1.99857 10.972 2.001L13.028 2ZM12 7C10.6739 7 9.40214 7.52678 8.46446 8.46447C7.52677 9.40215 6.99999 10.6739 6.99999 12C6.99999 13.3261 7.52677 14.5979 8.46446 15.5355C9.40214 16.4732 10.6739 17 12 17C13.3261 17 14.5978 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5978 7.52678 13.3261 7 12 7ZM12 9C12.394 8.99993 12.7841 9.07747 13.1481 9.22817C13.5121 9.37887 13.8428 9.5998 14.1215 9.87833C14.4001 10.1569 14.6211 10.4875 14.7719 10.8515C14.9228 11.2154 15.0004 11.6055 15.0005 11.9995C15.0006 12.3935 14.923 12.7836 14.7723 13.1476C14.6216 13.5116 14.4007 13.8423 14.1222 14.121C13.8436 14.3996 13.513 14.6206 13.149 14.7714C12.785 14.9223 12.395 14.9999 12.001 15C11.2053 15 10.4423 14.6839 9.87967 14.1213C9.31706 13.5587 9.00099 12.7956 9.00099 12C9.00099 11.2044 9.31706 10.4413 9.87967 9.87868C10.4423 9.31607 11.2053 9 12.001 9M17.251 5.5C16.9195 5.5 16.6015 5.6317 16.3671 5.86612C16.1327 6.10054 16.001 6.41848 16.001 6.75C16.001 7.08152 16.1327 7.39946 16.3671 7.63388C16.6015 7.8683 16.9195 8 17.251 8C17.5825 8 17.9005 7.8683 18.1349 7.63388C18.3693 7.39946 18.501 7.08152 18.501 6.75C18.501 6.41848 18.3693 6.10054 18.1349 5.86612C17.9005 5.6317 17.5825 5.5 17.251 5.5Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xxl-2">
+                    <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li>
+                            <p class="fs-5 text-white">Contact</p>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                +1 417 369 4255
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                hi@flyingduckmen.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xxl-2">
+                    <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li>
+                            <p class="fs-5 text-white">Shop</p>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Viking Mascot
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Griffin Mascot
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Shop All
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xxl-2">
+                    <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li>
+                            <p class="fs-5 text-white">Company</p>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="blog-list.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-xxl-2">
+                    <ul class="footer-menu list-unstyled mb-0 d-flex flex-column gap-2">
+                        <li>
+                            <p class="fs-5 text-white">Customer care</p>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Terms of Service
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Refund Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a class="fs-5 text-white text-opacity-70 link-hover" href="#">
+                                Shipping Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap py-7">
+                <p class="text-white text-opacity-70 fs-3">
+                    © 2025 Flying Duckmen. Powered by WooCommerce
+                </p>
+                <div class="d-flex align-items-center flex-sm-nowrap flex-wrap gap-sm-4 gap-3">
+                    <a class="fs-3 text-white fw-semibold link-hover" href="#">Privacy
+                        Policy</a>
+                    <a class="fs-3 text-white fw-semibold link-hover" href="#">Refund
+                        Policy</a>
+                    <a class="fs-3 text-white fw-semibold link-hover" href="#">Terms of
+                        Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../assets/libs/aos-master/dist/aos.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <!-- solar icons -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
