@@ -188,7 +188,7 @@
     </section>
 
     <!-- features Section -->
-    <section>
+    <section class="d-sm-block d-none">
       <div class="container">
         <div class="border border-border d-flex align-items-center flex-lg-nowrap flex-wrap">
           <div
@@ -255,7 +255,7 @@
                     <iconify-icon icon="ph:plus-bold"></iconify-icon>
                   </button>
                 </a>
-                <div class="mt-4 px-6">
+                <div class="py-4 px-6 bg-black">
                   <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
                     <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
                       Viking Truck Mascot
@@ -279,7 +279,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="text-white text-opacity-70">$79.99</p>
+                  <p class="text-white text-opacity-70 mb-0">$79.99</p>
                 </div>
               </div>
               <div class="mascot-card border border-border overflow-hidden">
@@ -299,7 +299,7 @@
                     <iconify-icon icon="ph:plus-bold"></iconify-icon>
                   </button>
                 </a>
-                <div class="mt-4 px-6">
+                <div class="py-4 px-6 bg-black">
                   <div class="d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap mb-2">
                     <a href="#" class="fs-5 fw-medium text-white d-flex align-items-center gap-2 link-hover">
                       Griffin Truck Mascot
@@ -325,7 +325,7 @@
                   </div>
                   <div class="d-flex gap-1">
                     <del class="text-opacity-40">$98.50</del>
-                    <p class="text-white text-opacity-70">$88.50</p>
+                    <p class="text-white text-opacity-70 mb-0">$88.50</p>
                   </div>
                 </div>
               </div>
@@ -728,10 +728,10 @@
           </div>
           <div class="d-flex justify-content-between flex-sm-row flex-column align-items-sm-center align-items-start">
             <h2 class="mb-0 fs-11 fw-medium text-white">Our Latest News</h2>
-            <button class="btn fs-3 fw-semibold text-white">
+            <a href="/src/html/blog-list.html" class="btn fs-3 fw-semibold text-white d-sm-flex d-none">
               <span class="p-1 rounded-circle bg-white text-uppercase"></span>
               Read all News
-            </button>
+            </a>
           </div>
         </div>
         <div class="row row-gap-4">
@@ -760,7 +760,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-12">
+          <div class="col-lg-4 col-sm-6 col-12 d-sm-block d-none">
             <div>
               <div>
                 <a href="#">
@@ -785,7 +785,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-12">
+          <div class="col-lg-4 col-sm-6 col-12 d-sm-block d-none">
             <div>
               <div>
                 <a href="#">
@@ -811,6 +811,12 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="d-sm-none d-flex justify-content-center">
+          <a href="/src/html/blog-list.html" class="btn fs-3 fw-semibold text-white d-flex mt-4">
+            <span class="p-1 rounded-circle bg-white text-uppercase"></span>
+            Read all News
+          </a>
         </div>
       </div>
     </section>
@@ -917,7 +923,7 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section>
+    <section class="newsletter-section">
       <div class="container border-top border-border py-sm-12 py-5">
         <div class="d-flex align-items-center justify-content-start gap-2 mb-6">
           <div class="h-16 border border-primary"></div>

@@ -91,11 +91,12 @@
     }
 }
 
-.checkout-btn{
-    &:hover{
+.checkout-btn {
+    &:hover {
         background-color: white !important;
         color: #0B0808 !important;
-        span{
+
+        span {
             background-color: #0B0808 !important;
         }
     }
@@ -104,6 +105,9 @@
 .mascot {
     .mascot-card {
         flex: 1;
+        background-image: url("../images/backgrounds/mascot-bg-pattern.webp");
+        background-size: contain;
+        background-position: center;
 
         .mascot-image {
             position: relative;
@@ -220,7 +224,15 @@
 }
 
 .newsletter-section {
-    border-top: 1px solid var(--bs-border);
+    background-position: left !important;
+}
+
+.newsletter-section,
+.footer {
+    background-image: url("../images/backgrounds/footer-pattern.png");
+    // background-size: 100%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {

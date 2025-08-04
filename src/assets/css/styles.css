@@ -17243,6 +17243,9 @@ textarea.form-control-lg {
 
 .mascot .mascot-card {
   flex: 1;
+  background-image: url("../images/backgrounds/mascot-bg-pattern.webp");
+  background-size: contain;
+  background-position: center;
 }
 .mascot .mascot-card .mascot-image {
   position: relative;
@@ -17331,7 +17334,14 @@ textarea.form-control-lg {
 }
 
 .newsletter-section {
-  border-top: 1px solid var(--bs-border);
+  background-position: left !important;
+}
+
+.newsletter-section,
+.footer {
+  background-image: url("../images/backgrounds/footer-pattern.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
