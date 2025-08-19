@@ -1,3 +1,21 @@
+body {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/backgrounds/footer-pattern.png");
+        background-position: center right;
+        background-repeat: repeat;
+        width: 170px;
+        height: 100%;
+        top: 0;
+        right: 10px;
+        transform: rotatey(180deg);
+        z-index: 10;
+    }
+}
+
 .banner-section {
     background-size: cover;
     height: 100vh;
@@ -146,7 +164,8 @@
     .product-card {
         .product-image {
             overflow: hidden;
-
+            height: 478px;
+    
             .view,
             .add-cart {
                 position: absolute;
@@ -223,59 +242,61 @@
     width: 50%;
 }
 
-.newsletter-section {
-    position: relative;
+// .newsletter-section {
+//     position: relative;
 
-    &::after {
-        content: "";
-        position: absolute;
-        background-image: url("../images/backgrounds/footer-pattern.png");
-        background-position: left;
-        background-repeat: no-repeat;
-        width: 170px;
-        height: 100%;
-        top: 0;
-    }
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         background-image: url("../images/backgrounds/footer-pattern.png");
+//         background-position: left;
+//         background-repeat: no-repeat;
+//         width: 170px;
+//         height: 100%;
+//         top: 0;
+//     }
 
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../images/backgrounds/footer-pattern.png");
-        background-position: right;
-        background-repeat: no-repeat;
-        width: 170px;
-        height: 100%;
-        top: 0;
-        right: 0;
-    }
-}
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         background-image: url("../images/backgrounds/footer-pattern.png");
+//         background-position: right;
+//         background-repeat: no-repeat;
+//         width: 170px;
+//         height: 100%;
+//         top: 0;
+//         right: 0;
+//         transform: rotatey(180deg);
+//     }
+// }
 
-.footer {
-    position: relative;
+// .footer {
+//     position: relative;
 
-    &::after {
-        content: "";
-        position: absolute;
-        background-image: url("../images/backgrounds/footer-pattern.png");
-        background-position: bottom left;
-        background-repeat: no-repeat;
-        width: 170px;
-        height: 100%;
-        top: 0;
-    }
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         background-image: url("../images/backgrounds/footer-pattern.png");
+//         background-position: bottom left;
+//         background-repeat: no-repeat;
+//         width: 170px;
+//         height: 100%;
+//         top: 0;
+//     }
 
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../images/backgrounds/footer-pattern.png");
-        background-position: bottom right;
-        background-repeat: no-repeat;
-        width: 170px;
-        height: 100%;
-        top: 0;
-        right: 0;
-    }
-}
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         background-image: url("../images/backgrounds/footer-pattern.png");
+//         background-position: bottom right;
+//         background-repeat: no-repeat;
+//         width: 170px;
+//         height: 100%;
+//         top: 0;
+//         right: 0;
+//         transform: rotatey(180deg);
+//     }
+// }
 
 @media (max-width: 768px) {
     .product-slider {
@@ -311,19 +332,19 @@
         width: 100%;
     }
 
-    .newsletter-section {
-        &::after {
-            background-image: none;
-        }
-    }
-
-    .footer {
-        &::after {
-            background-image: none;
-        }
-
+    body {
         &::before {
-            background-repeat: repeat-y;
+            background-image: none;
         }
     }
+
+    // .footer {
+    //     &::after {
+    //         background-image: none;
+    //     }
+
+    //     &::before {
+    //         background-repeat: repeat-y;
+    //     }
+    // }
 }

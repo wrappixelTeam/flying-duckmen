@@ -17159,6 +17159,23 @@ textarea.form-control-lg {
     width: 80px !important;
   }
 }
+body {
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/backgrounds/footer-pattern.png");
+  background-position: center right;
+  background-repeat: repeat;
+  width: 170px;
+  height: 100%;
+  top: 0;
+  right: 10px;
+  transform: rotatey(180deg);
+  z-index: 10;
+}
+
 .banner-section {
   background-size: cover;
   height: 100vh;
@@ -17274,6 +17291,7 @@ textarea.form-control-lg {
 
 .product-slider .product-card .product-image {
   overflow: hidden;
+  height: 478px;
 }
 .product-slider .product-card .product-image .view,
 .product-slider .product-card .product-image .add-cart {
@@ -17333,56 +17351,6 @@ textarea.form-control-lg {
   width: 50%;
 }
 
-.newsletter-section {
-  position: relative;
-}
-.newsletter-section::after {
-  content: "";
-  position: absolute;
-  background-image: url("../images/backgrounds/footer-pattern.png");
-  background-position: left;
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 100%;
-  top: 0;
-}
-.newsletter-section::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/backgrounds/footer-pattern.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 100%;
-  top: 0;
-  right: 0;
-}
-
-.footer {
-  position: relative;
-}
-.footer::after {
-  content: "";
-  position: absolute;
-  background-image: url("../images/backgrounds/footer-pattern.png");
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 100%;
-  top: 0;
-}
-.footer::before {
-  content: "";
-  position: absolute;
-  background-image: url("../images/backgrounds/footer-pattern.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  width: 170px;
-  height: 100%;
-  top: 0;
-  right: 0;
-}
-
 @media (max-width: 768px) {
   .product-slider .owl-nav {
     top: -10%;
@@ -17404,14 +17372,8 @@ textarea.form-control-lg {
   .newsletter-input {
     width: 100%;
   }
-  .newsletter-section::after {
+  body::before {
     background-image: none;
-  }
-  .footer::after {
-    background-image: none;
-  }
-  .footer::before {
-    background-repeat: repeat-y;
   }
 }
 .list-page .banner-section {
