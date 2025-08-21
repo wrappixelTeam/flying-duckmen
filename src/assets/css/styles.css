@@ -17168,6 +17168,7 @@ body::before {
   background-image: url("../images/backgrounds/footer-pattern.png");
   background-position: center right;
   background-repeat: repeat;
+  background-size: contain;
   width: 170px;
   height: 100%;
   top: 0;
@@ -17351,6 +17352,11 @@ body::before {
   width: 50%;
 }
 
+@media (max-width: 1550px) {
+  body::before {
+    width: 96px;
+  }
+}
 @media (max-width: 768px) {
   .product-slider .owl-nav {
     top: -10%;
