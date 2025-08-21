@@ -6,8 +6,8 @@ body {
         position: absolute;
         background-image: url("../images/backgrounds/footer-pattern.png");
         background-position: center right;
-        background-repeat: repeat;
-        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 170px;
         height: 100%;
         top: 0;
@@ -302,7 +302,8 @@ body {
 @media (max-width: 1550px) {
     body {
         &::before {
-            width: 96px
+            width: 96px;
+            background-size: contain;
         }
     }
 }
