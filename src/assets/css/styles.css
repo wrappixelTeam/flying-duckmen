@@ -17368,7 +17368,6 @@ body::before {
   body::before {
     width: 96px;
     background-size: contain;
-    background-position: top right;
   }
   .contactpage::before {
     background-size: cover;
