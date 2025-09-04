@@ -17259,12 +17259,8 @@ body::before {
   background-color: #0B0808 !important;
 }
 
-.mascot {
-  background-color: var(--bs-black);
-}
 .mascot .mascot-card {
   flex: 1;
-  background-image: url("../images/backgrounds/mascot-bg-pattern.webp");
   background-size: contain;
   background-position: center;
 }
@@ -17372,6 +17368,7 @@ body::before {
   body::before {
     width: 96px;
     background-size: contain;
+    background-position: top right;
   }
   .contactpage::before {
     background-size: cover;

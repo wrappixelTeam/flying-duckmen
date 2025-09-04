@@ -122,11 +122,8 @@ body {
 }
 
 .mascot {
-    background-color: var(--bs-black);
-
     .mascot-card {
         flex: 1;
-        background-image: url("../images/backgrounds/mascot-bg-pattern.webp");
         background-size: contain;
         background-position: center;
 
@@ -162,6 +159,7 @@ body {
         }
     }
 }
+
 .product-cards,
 .product-slider {
     .product-card {
@@ -246,67 +244,12 @@ body {
     background-color: #242323;
 }
 
-// .newsletter-section {
-//     position: relative;
-
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         background-image: url("../images/backgrounds/footer-pattern.png");
-//         background-position: left;
-//         background-repeat: no-repeat;
-//         width: 170px;
-//         height: 100%;
-//         top: 0;
-//     }
-
-//     &::before {
-//         content: "";
-//         position: absolute;
-//         background-image: url("../images/backgrounds/footer-pattern.png");
-//         background-position: right;
-//         background-repeat: no-repeat;
-//         width: 170px;
-//         height: 100%;
-//         top: 0;
-//         right: 0;
-//         transform: rotatey(180deg);
-//     }
-// }
-
-// .footer {
-//     position: relative;
-
-//     &::after {
-//         content: "";
-//         position: absolute;
-//         background-image: url("../images/backgrounds/footer-pattern.png");
-//         background-position: bottom left;
-//         background-repeat: no-repeat;
-//         width: 170px;
-//         height: 100%;
-//         top: 0;
-//     }
-
-//     &::before {
-//         content: "";
-//         position: absolute;
-//         background-image: url("../images/backgrounds/footer-pattern.png");
-//         background-position: bottom right;
-//         background-repeat: no-repeat;
-//         width: 170px;
-//         height: 100%;
-//         top: 0;
-//         right: 0;
-//         transform: rotatey(180deg);
-//     }
-// }
-
 @media (max-width: 1550px) {
     body {
         &::before {
             width: 96px;
             background-size: contain;
+            background-position: top right;
         }
     }
 
@@ -347,6 +290,7 @@ body {
         position: relative;
         z-index: 1;
     }
+
     .product-cards,
     .product-slider {
         .product-card {
